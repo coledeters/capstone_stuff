@@ -1,0 +1,4 @@
+This game was built by Cole Deters
+
+It is a text based theatre of the mind game, That plays a random genre of music while you play it. It gathers all the actions that you took and compiles them to see how different genres of music affect decision making.
+	There is a data sheet that is collecting data live for those who wish to look at it.
