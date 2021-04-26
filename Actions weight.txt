@@ -23,4 +23,6 @@
 (weapon) if not nothing = 1 good & 1 law
 (feeling) add whatever the number is to chaos
 (potion) invisiblity = 5 law
-($Wtype)
+(Wtype)
+(windowBreak) true = 1 evil
+(balconyDoorPicked) true = 2 law
