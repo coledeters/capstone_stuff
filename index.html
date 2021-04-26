@@ -37,7 +37,7 @@ A.newTrack('rock','Music/Rock.mp3');
 
 </script><tw-tag name="dialog" color="yellow"></tw-tag>,<tw-tag name="location" color="green"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="2000,300" size="100,100">Welcome to my game
 
-all you need to do is click on the choices presented infront of you
+all you need to do is click on the choices presented in front of you
 
 music will be playing while you are in the game
 
@@ -50,7 +50,7 @@ music will be playing while you are in the game
 
 (text-colour:green)[green] text tells you that it is your character that is speaking
 
-(text-colour:red)[red ]text tells you that it is someone elses dialog
+(text-colour:red)[red ]text tells you that it is someone else&#39;s dialog
 
 As for starting information you will need to play the game:
 
@@ -63,7 +63,7 @@ you have traveled to a town called Gaulville where you need to meet with your co
 (elseif:$genre is 3)[(track: &#39;classical&#39;, &#39;play&#39;)]
 (elseif:$genre is 4)[(track: &#39;rock&#39;, &#39;play&#39;)]</tw-passagedata><tw-passagedata pid="3" name="Gaulville Tavern first time" tags="location" position="2000,700" size="100,100">As you enter the Tavern, you are hit by a wave of smells: meat being cooked, stale wine and beer.
 
-looking around the dim tavern you can some people who stand out.
+looking around the dim tavern you can see some people who stand out.
 Who do you wish to approach about being your contact?
 
 [[the barkeep-&gt;barkeep first]] the scruffy looking dwarf waves to you as you enter
@@ -75,7 +75,7 @@ Who do you wish to approach about being your contact?
 (set:$Money to 150)(set: $inventory to (a:))(set:$time to &quot;day&quot;)(set:$armor to &quot;nothing&quot;)(set:$weapon to &quot;nothing&quot;)(set:$feeling to 0)(set:$potion to &quot;none&quot;)(set:$Wtype to &quot;N/A&quot;)</tw-passagedata><tw-passagedata pid="4" name="barkeep first" tags="dialog" position="1600,900" size="100,100">you approach the Barkeep, who gives you a warm smile and a wave.
 As you get closer to him, you can see his somewhat unkempt hair and beard the same color as the old stain covered bar you approach.
 
-you sit infront of him and ask him
+you sit in front of him and ask him
 (text-colour:green)[&quot;I&#39;m looking for a way to contact someone I&#39;m supposed to meet&quot;]
 
 He flashes a smile once more and leans in close ands tells you
@@ -97,7 +97,7 @@ responding like you were told to
 
 she smiles and says before walking away (text-colour:red)[&quot;follow me into the kitchen I&#39;ve got something to tell you&quot;]
 
-you slowly stand up, still tired from your journy, and walk towards the kitchen
+you slowly stand up, still tired from your journey, and walk towards the kitchen
 
 [[enter the kitchen-&gt;barmaid first two]]
 
@@ -106,7 +106,7 @@ you slowly stand up, still tired from your journy, and walk towards the kitchen
 he looks up and smiles at you and asks
 (text-colour:red)[&quot;Come to ask a question it seems&quot;]
 
-slighlty unnerved you respond in return like you were told to
+slightly unnerved you respond in return like you were told to
 (text-colour:green)[&quot;I&#39;m looking for a way to contact someone I&#39;m supposed to meet&quot;]
 
 (text-colour:red)[&quot;ah, I see, I am the one you are looking for then&quot;
@@ -121,7 +121,7 @@ he slowly stands up and starts to walk to the staircase where the rooms are loca
 (set:$boredman to false)(set:$gambler to false)</tw-passagedata><tw-passagedata pid="7" name="brawler first" tags="dialog" position="2200,900" size="100,100">You approach the man overwatching a brawl in the tavern.
 He looks toward you and gives a short nod and returns to watching the brawl
 
-Waiting until he has divied out the money from the people brawling, he finally looks towards you and asks
+Waiting until he has divvied out the money from the people brawling, he finally looks towards you and asks
 (text-colour:red)[&quot;what do you want&quot;]
 
 responding like you were told to
@@ -160,7 +160,7 @@ speak to the [[gambler-&gt;Gaulville tavern gambler]]
 go to your [[room-&gt;Gaulville tavern room]] for the night
 
 return to [[town-&gt;Gaulville]] 
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="10" name="Gaulville" tags="location" position="2000,1800" size="100,100">you walk around the city of gaulville, looking around you can find signs that lead you to varius points of interest in the town.
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="10" name="Gaulville" tags="location" position="2000,1800" size="100,100">you walk around the city of gaulville, looking around you can find signs that lead you to various points of interest in the town.
 which would you like to approach
 
 The [[blacksmith-&gt;Gaulville blacksmith]]
@@ -194,17 +194,17 @@ weapon type:(print:$Wtype)
 (if: $inventory contains &quot;shortbow&quot;)[(text-colour:yellow)[(link: &quot;equip shortbow&quot;)[(set:$weapon to &quot;shortbow&quot;)(set:$Wtype to &quot;ranged&quot;)]]]
 (if: $inventory contains &quot;longbow&quot;)[(text-colour:yellow)[(link: &quot;equip longbow&quot;)[(set:$weapon to &quot;longbow&quot;)(set:$Wtype to &quot;ranged&quot;)]]]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="12" name="notes" tags="" position="3195,6706" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="barkeep first two" tags="dialog" position="1600,1050" size="100,100">The barkeep walks into the kitchen with you following him.
+(link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="12" name="notes" tags="" position="3195,6706" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="barkeep first two" tags="dialog" position="1600,1048.3333333333333" size="100,100">The barkeep walks into the kitchen with you following him.
 
 when the door closes behind you, he looks around, then turns towards you and says
 (text-colour:red)[&quot;My names Calum, and I&#39;m the one thats got the job yer lookin for.&quot;
 &quot;To the north there&#39;s a warehouse that we need sum&#39;in from, we need ya to either take or copy their business ledger&quot;]
 
 in a more serious voice he warns you
-(text-colour:red)[&quot;be careful, the building is guarded, allthough from what we&#39;ve seen they have different guard scheduals for day and night. there&#39;s a couple of different methods for you to get in, but thats for you to figure out.&quot;]
+(text-colour:red)[&quot;be careful, the building is guarded, allthough from what we&#39;ve seen they have different guard schedules for day and night. there&#39;s a couple of different methods for you to get in, but thats for you to figure out.&quot;]
 
 He sighs heavily 
-(text-colour:red)[&quot;just dont get caught&quot;]
+(text-colour:red)[&quot;just don&#39;t get caught&quot;]
 
 [[continued-&gt;barkeep first three]]</tw-passagedata><tw-passagedata pid="14" name="barkeep first three" tags="dialog" position="1600,1200" size="100,100">Calum then hands you a bag of 150 gold
 (text-colour:red)[&quot;get some supplies from around town with this to complete yer task, I&#39;ve got a room for you to wait in if ya want to approach at night&quot;]
@@ -229,7 +229,7 @@ in a more serious tone she will say
 ]
 [[continued-&gt;barmaid first three]]</tw-passagedata><tw-passagedata pid="16" name="barmaid first three" tags="dialog" position="1800,1200" size="100,100">Ceara then hands you a bag of 150 gold
 
-(text-colour:red)[&quot;there are some places around town for you to buy supplies and tools from, dont forget about the local fence, hes got some fun stuff&quot;]
+(text-colour:red)[&quot;there are some places around town for you to buy supplies and tools from, don&#39;t forget about the local fence, he&#39;s got some fun stuff&quot;]
 
 before leaving the kitchen Ceara will say
 (text-colour:red)[&quot;come back to the tavern if you wish to wait for night to come&quot;]
@@ -249,10 +249,10 @@ He leans in closer and speaks again
 (text-colour:red)[&quot;be warned, there are guards about the warehouse, both day and night, you can begin at either time. don&#39;t get caught&quot;
 ]
 he pauses, and looks up slightly in thought.
-(text-colour:red)[&quot;to be fair, you cant get caught if no ones alive to catch you&quot;
+(text-colour:red)[&quot;to be fair, you can&#39;t get caught if no ones alive to catch you&quot;
 ]
 shaking his head he offers
-(text-colour:red)[&quot;but thats beside the point.&quot;]
+(text-colour:red)[&quot;but that&#39;s beside the point.&quot;]
 
 [[continued-&gt;old man first three]]</tw-passagedata><tw-passagedata pid="18" name="old man first three" tags="dialog" position="2000,1200" size="100,100">He hands you a bag with 150 gold in it.
 (text-colour:red)[&quot;use this to buy supplies in town for the mission, if want what something more fun, find the fence in town.&quot;
@@ -261,7 +261,7 @@ shaking his head he offers
 
 shooing you away from the room you leave the tavern to enter the town
 
-[[enter the town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="19" name="Gaulville blacksmith" tags="location" position="1175,2300" size="100,100">Entering the Blacksmith located in this town, you see a Burly Dwarf maning the forge.
+[[enter the town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="19" name="Gaulville blacksmith" tags="location" position="1175,2300" size="100,100">Entering the Blacksmith located in this town, you see a Burly Dwarf manning the forge.
 
 He will place down whatever he was working on and greet you
 (text-colour:red)[&quot;Welcome to my shop my name is Broulic BoneForger, I&#39;ve got some stuff over there if want to buy anything&quot;]
@@ -295,7 +295,7 @@ A [[Brick named Steve]]: 100 gold](else:)[A [[Brick named Steve-&gt;No Money]]: 
 (if:$inventory contains &quot;Flint &amp; Steel&quot;)[](else:)[(if:$Money&gt;=1)[
 [[Flint &amp; Steel]]: 1 gold](else:)[[[Flint &amp; Steel-&gt;No Money]] : 1 gold]]
 return to [[town-&gt;Gaulville]] 
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="21" name="Gaulville fletcher" tags="location" position="2200,2200" size="100,100">entering the towns Flectcher, you see a basic store front with bows and arrows. A Man is in the back at a work table making arrows, He places his half finished arrow down and walks toward you.
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="21" name="Gaulville fletcher" tags="location" position="2200,2200" size="100,100">entering the towns Fletcher, you see a basic store front with bows and arrows. A Man is in the back at a work table making arrows, He places his half finished arrow down and walks toward you.
 &quot;My name is Archie Lawson, I&#39;m the town fletcher, look around and see if you want to buy anything&quot;
 
 looking around the store you find 
@@ -326,13 +326,16 @@ Some [[lockpicks]]: 5 gold](else:)[A [[lockpicks-&gt;No Money]]: 5 gold]]
 go back to [[town-&gt;Gaulville]] 
 
 look at [[inventory]]
-</tw-passagedata><tw-passagedata pid="23" name="Gaulville alchemist" tags="location" position="2800,2050" size="100,100">entering the local Alchemists shop you are blasted by all sorts of sickening and pleasent smells all at once. sitting at the counter rearranging potions is a very large orcish man. he looks up at you and states
+</tw-passagedata><tw-passagedata pid="23" name="Gaulville alchemist" tags="location" position="2800,2050" size="100,100">entering the local Alchemists shop you are blasted by all sorts of sickening and pleasant smells all at once. sitting at the counter rearranging potions is a very large orcish man. he looks up at you and states
 
-(text-colour:red)[&quot;My name is Volgan Stonebreaker, I make potions, lets see what you need&quot;]
+(text-colour:red)[&quot;My name is Volgan Stonebreaker, I make potions, let&#39;s see what you need&quot;]
 looking around you see some potions that could be useful to use
 
-(if:$inventory contains &quot;invisiblity potion&quot;)[](else:)[(if:$Money&gt;=50)[
-A [[invisiblity potion]]: 50 gold](else:)[A [[invisiblity potion-&gt;No Money]]: 50 gold]]
+(if:$inventory contains &quot;invisibility
+ potion&quot;)[](else:)[(if:$Money&gt;=50)[
+A [[invisibility
+ potion]]: 50 gold](else:)[A [[invisibility
+ potion-&gt;No Money]]: 50 gold]]
 (if:$inventory contains &quot;fire resistance potion&quot;)[](else:)[(if:$Money&gt;=20)[
 A [[fire resistance potion]]: 20 gold](else:)[A [[fire resistance potion-&gt;No Money]]: 20 gold]]
 (if:$inventory contains &quot;water breathing potion&quot;)[](else:)[(if:$Money&gt;=20)[
@@ -349,7 +352,7 @@ looking at you he begins
 
 (text-colour:red)[&quot;the place is guarded both day and night, so decide which time of day you&#39;ll approach at.&quot;]
 
-he will guesture towards the bed and continue
+he will gesture towards the bed and continue
 (text-colour:red)[&quot;return to the tavern and you can wait until night time&quot;
 ]
 [[continue listening-&gt;brawler first three]]</tw-passagedata><tw-passagedata pid="25" name="brawler first three" tags="dialog" position="2200,1200" size="100,100">
@@ -358,22 +361,22 @@ He will then hand you a bag of 150 gold, and say
 
 &quot;there is also a fence in town, find him if you want more fun items&quot;
 ]
-Amos will tell you to head out in to town has he has he part he has to work on.
+Amos will tell you to head out into town as he has his part he has to work on.
 
 [[Exit into town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="26" name="Gambler first second" tags="dialog" position="2400,1050" size="100,100">he will wait for to get settled in to you chair before starting
 
-(text-colour:red)[&quot;We&#39;ve got a job for you, in the north of town there is a warehouse that we need to get their business ledger, you can either take it or copy it, its up to you&quot;]
+(text-colour:red)[&quot;We&#39;ve got a job for you, in the north of town there is a warehouse that we need to get their business ledger, you can either take it or copy it, it&#39;s up to you&quot;]
 
 (text-colour:red)[&quot;approach day or night, its guarded at both times, return here to wait until night&quot;]
 
 he rolls 2 of his black dice across the table to you
-(text-colour:red)[&quot;dont get caught, it doesnt end well&quot;]
+(text-colour:red)[&quot;don&#39;t get caught, it doesnt end well&quot;]
 
 looking at the dice, they rolled 2 ones, snake eyes
 
 [[continue listening-&gt;Gambler first three]]</tw-passagedata><tw-passagedata pid="27" name="Gambler first three" tags="dialog" position="2400,1200" size="100,100">He will slide over 150 gold to you and say
 
-(text-colour:red)[&quot;use this to get some supplies in town, just dont forget the fence, he&#39;s got some fun stuff&quot;]
+(text-colour:red)[&quot;use this to get some supplies in town, just don&#39;t forget the fence, he&#39;s got some fun stuff&quot;]
 
 you both look over to the side and see some people waiting now that he has seemed to lose and hand over money
 
@@ -393,7 +396,7 @@ he smiles at you
 
 [[walk away-&gt;Gaulville tavern]] 
 
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="30" name="Gaulville Tavern barkeep" tags="dialog" position="700,2000" size="100,100">Sitting down at the bar, the barkeep will appear infront of you and ask
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="30" name="Gaulville Tavern barkeep" tags="dialog" position="700,2000" size="100,100">Sitting down at the bar, the barkeep will appear in front of you and ask
 &quot;What can I get for ya, we got food and drink, each will cost ya 5 silver&quot;
 (if:$Money&gt;=0.5)[
 order some [[booze-&gt;Gaulville Tavern barkeep booze]] 
@@ -412,10 +415,11 @@ look at [[inventory]]</tw-passagedata><tw-passagedata pid="31" name="Gaulville t
 ]
 [[walk away-&gt;Gaulville tavern]] from the gambler
 
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="32" name="Gaulville Tavern barkeep booze" tags="dialog" position="500,2000" size="100,100">You order some Ale from the barkeep placing 5 sliver on the bar, he Smiles, grabs the money and places infront of you a large mug of ale
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="32" name="Gaulville Tavern barkeep booze" tags="dialog" position="500,2000" size="100,100">You order some Ale from the barkeep placing 5 silver on the bar, he Smiles, grabs the money and places in front
+ of you a large mug of ale
 (set:$Money to $Money-0.5)
 You drink your mug of ale
-(if: $feeling is 5)[(go-to: &quot;blackout drunk&quot; )](if: $feeling is 4)[you feel very drunk, food would be nice(set: $feeling to 5)](if: $feeling is 3)[beginning to feel drunk you think that you should probably eat some food to sober up(set: $feeling to 4)](if: $feeling is 2)[Your buzz from the ale is getting close to being drunk(set: $feeling to 3)](if: $feeling is 1)[you begin to start to feel a buzz from the ale(set: $feeling to 2)](if: $feeling is 0)[you dont feel any effects of the ale yet(set: $feeling to 1)]
+(if: $feeling is 5)[(go-to: &quot;blackout drunk&quot; )](if: $feeling is 4)[you feel very drunk, food would be nice(set: $feeling to 5)](if: $feeling is 3)[beginning to feel drunk you think that you should probably eat some food to sober up(set: $feeling to 4)](if: $feeling is 2)[Your buzz from the ale is getting close to being drunk(set: $feeling to 3)](if: $feeling is 1)[you begin to start to feel a buzz from the ale(set: $feeling to 2)](if: $feeling is 0)[you don&#39;t feel any effects of the ale yet(set: $feeling to 1)]
 
 order another [[ale-&gt;Gaulville Tavern barkeep booze]] 
 
@@ -424,7 +428,8 @@ order [[food-&gt;Gaulville Tavern barkeep food]]
 walk away from [[bar-&gt;Gaulville tavern]] 
 
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="33" name="Gaulville Tavern barkeep food" tags="dialog" position="500,2200" size="100,100">You order some food from the barkeep, he collects your coins that are placed on the bar.
-a few minutes later one of the barmaids will place a plate of food infront of you
+a few minutes later one of the barmaids will place a plate of food in front
+ of you
 
 you spend some munching on the food that you ordered
 (if:$feeling&gt;0)[you feel less drunk now that you&#39;ve eaten more food(set:$feeling to $feeling -1)]
@@ -448,7 +453,7 @@ a [[Storage entrance-&gt;warehouse back entrance day]] in the back on the easter
 
 
 (set:$fwomanlife to true)(set:$FWposion to false)(set:$map to false)(set:$confin to false)(set:$key to false)(set:$ledger to false)(set:$safec to false)(set:$sleepworker to true)(set: $front to false)(set:$back to false)(set:$balcony to false)(set:$backguard to true)(set:$fightleather to false)(set:$fightchainmail to false)(set:$fightother to false)(set:$surrender to false)(set:$sneakFront to false)(set:$powder to false)
-</tw-passagedata><tw-passagedata pid="35" name="No Money" tags="" position="2000,1625" size="100,100">Looking into your coin purse, you find that you dont have enough money to for this
+</tw-passagedata><tw-passagedata pid="35" name="No Money" tags="" position="2000,1625" size="100,100">Looking into your coin purse, you find that you don&#39;t have enough money to for this
 
 (link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="36" name="leather armor" tags="dialog" position="825,2400" size="100,100">picking up the leather armor, you bring it to Broulic and hand him 15 coins for it.
 (set:$Money to $Money -15)
@@ -530,9 +535,12 @@ current money is (print:$Money)</tw-passagedata><tw-passagedata pid="46" name="l
 
 go back to [[town-&gt;Gaulville]] 
 
-current money is (print:$Money)</tw-passagedata><tw-passagedata pid="47" name="invisiblity potion" tags="dialog" position="2575,2200" size="100,100">picking up the invisiblity potion, you bring it to Volgan and hand him 50 coins for it.
+current money is (print:$Money)</tw-passagedata><tw-passagedata pid="47" name="invisibility
+ potion" tags="dialog" position="2575,2200" size="100,100">picking up the invisibility
+ potion, you bring it to Volgan and hand him 50 coins for it.
 (set:$Money to $Money -50)
-(set:$inventory to it +(a:&quot;invisiblity potion&quot;))
+(set:$inventory to it +(a:&quot;invisibility
+ potion&quot;))
 
 [[buy more things-&gt;Gaulville alchemist]] 
 
@@ -588,7 +596,7 @@ go back to [[town-&gt;Gaulville]]
 
 current money is (print:$Money)</tw-passagedata><tw-passagedata pid="54" name="wait for night" tags="" position="695,1405" size="100,100">laying down on the bed you decide to take a short nap to wait for night to begin. you wake up as the sun is setting and exit the tavern to continue your mission
 (set:$time to &quot;night&quot;)
-[[Go to Town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="55" name="warehouse front entrance day" tags="" position="800,3050" size="100,100">inspecting the front entrance, you can see through the window that there is a entrance room with just a secretary at a desk, who seems to be asleep.
+[[Go to Town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="55" name="warehouse front entrance day" tags="" position="800,3051.6666666666665" size="100,100">inspecting the front entrance, you can see through the window that there is a entrance room with just a secretary at a desk, who seems to be asleep.
 once you enter the building there will be no turning back
 
 go back to [[walking around-&gt;warehouse]] 
@@ -596,18 +604,19 @@ look at [[inventory]]
 
 There is no turning back after choosing this:
 enter [[door-&gt;warehouse front room day]]</tw-passagedata><tw-passagedata pid="56" name="warehouse back entrance day" tags="" position="2350,3075" size="100,100">walking past the back entrance, you inspect it to see what you can find, there are large doors that lead into the main room of the warehouse.
-sitting ajacent to the door is a guard currently sleeping
+sitting adjacent
+ to the door is a guard currently sleeping
 
 continue [[walking around-&gt;warehouse]] 
 look at [[inventory]]
 
-there is no turning back if you choice this option
+there is no turning back if you choose this option
 walk towards the [[back door-&gt;warehouse back door day]]</tw-passagedata><tw-passagedata pid="57" name="warehouse balcony day" tags="" position="3568,2933" size="100,100">walking around you see a balcony on the northern side of the building that has a guardrail, 2 windows and a door in the center. you will need to find some way of getting up to the balcony.
 
 continue [[walking around-&gt;warehouse]] 
 look at [[inventory]]
 [[Balcony-&gt;warehouse balcony day]] that overlooks away from town on the north side
-there is no turning back if you choice this option
+there is no turning back if you choose this option
 approach the [[balcony-&gt;warehouse balcony ground day]]</tw-passagedata><tw-passagedata pid="58" name="warehouse front entrance night" tags="" position="4600,2200" size="100,100">inspecting the front entrance, there is a guard standing at the door, you can see through the window that there is a entrance room with an empty desk
 once you enter the building there will be no turning back
 
@@ -615,7 +624,8 @@ go back to [[walking around-&gt;warehouse]]
 look at [[inventory]]
 
 enter [[door-&gt;warehouse front room night]]</tw-passagedata><tw-passagedata pid="59" name="warehouse back entrance night" tags="" position="4875,2200" size="100,100">walking past the back entrance, you inspect it to see what you can find, there are large doors that lead into the main room of the warehouse.
-standing ajacent to the door there are two guards bickering back and forth
+standing adjacent
+ to the door there are two guards bickering back and forth
 
 continue [[walking around-&gt;warehouse]] 
 look at [[inventory]]
@@ -641,20 +651,24 @@ continue [[walking around-&gt;warehouse]]
 look at [[inventory]]
 
 there is no turning back if you choice this option
-approach the [[balcony-&gt;warehouse balcony ground night]]</tw-passagedata><tw-passagedata pid="62" name="warehouse front room day" tags="" position="801,3203" size="100,100">as you go to open the door to the front room of the ware house, you think to yourself about how you should proceed in walking in
+approach the [[balcony-&gt;warehouse balcony ground night]]</tw-passagedata><tw-passagedata pid="62" name="warehouse front room day" tags="" position="801,3203" size="100,100">as you go to open the door to the front room of the warehouse, you think to yourself about how you should proceed in walking in
 
 [[walk in-&gt;front normal]] like its normal
 
 [[sneak in-&gt;front sneak]]
 
-[[walk in-&gt;front confindence]] with confidence
+[[walk in-&gt;front confidence]] with confidence
 (set: $front to true)
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="63" name="warehouse back door day" tags="" position="2348,3230" size="100,100">Approaching the back door, you can see:
 (if:$backguard is true)[the guard asleep at his post sitting in a chair.](else:)[the lifeless corpse of the guard slumped in his chair]
 the large doors that lead inside.
 (set:$back to true)
 what do you do:
-(if: $inventory contains &quot;invisiblity potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisiblity potion&quot;)[(set:$potion to &quot;invisiblity&quot;)(set:$inventory to it -(a:&quot;invisiblity potion&quot;))]]]
+(if: $inventory contains &quot;invisibility
+ potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility
+ potion&quot;)[(set:$potion to &quot;invisibility
+&quot;)(set:$inventory to it -(a:&quot;invisibility
+ potion&quot;))]]]
 (if:$backguard is true)[approach [[the guard-&gt;back guard]].]
 approach [[the door-&gt;back door outside]].
 
@@ -688,7 +702,7 @@ You try your best to sneak inside, and you see A woman (if:$fwomanlife is true)[
 what would you like to do:
 (if:$front is true)[move up to the [[next door-&gt;front warehouse door inside front]]](else:)[go back through the [[door you came from-&gt;warehouse mainroom]]]
 look at the [[desk-&gt;front desk]] with the woman at it
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="73" name="front confindence" tags="" position="1450,3376" size="100,100">Bursting through the doorway, the woman at the desk sits up with a snort and looks at you in suprise. there is no way to get to the next door without dealing with the woman in the room.
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="73" name="front confidence" tags="" position="1450,3376" size="100,100">Bursting through the doorway, the woman at the desk sits up with a snort and looks at you in surprise. there is no way to get to the next door without dealing with the woman in the room.
 what do you do:
 (if:$Wtype is &quot;melee&quot;)[(text-colour:yellow)[[[stab-&gt;front stab front woman burst]]] the woman with your (print:$weapon)](if:$Wtype is &quot;ranged&quot;)[(text-colour:yellow)[[[shoot-&gt;front shoot front woman burst]]] the woman with your (print:$weapon)]
 (if:$armor is &quot;city inspector uniform&quot;)[(if:$Wtype is &quot;ranged&quot;)[(text-colour:yellow)[[[explain that-&gt;front woman inspector]] you are a city inspector]]
@@ -696,10 +710,14 @@ what do you do:
 (set:$confin to true)
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="74" name="front warehouse door inside front" tags="" position="1543,3999" size="100,100">moving to the door that leads further into the building(if:$map is true)[, as you have seen the map you know that this leads into the main storage room of the warehouse]
 
-listening carefully to door, you can hear some movement and voices on the other side. it would be much easier sneak past all the people if you were invisible
+listening carefully to the door, you can hear some movement and voices on the other side. it would be much easier sneak past all the people if you were invisible
 what do you do:
 (if:$confin is false)[(link-goto: &quot;Return&quot;, (history:)&#39;s last) to the room]
-(if: $inventory contains &quot;invisiblity potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisiblity potion&quot;)[(set:$potion to &quot;invisiblity&quot;)(set:$inventory to it -(a:&quot;invisiblity potion&quot;))]]]
+(if: $inventory contains &quot;invisibility
+ potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility
+ potion&quot;)[(set:$potion to &quot;invisibility
+&quot;)(set:$inventory to it -(a:&quot;invisibility
+ potion&quot;))]]]
 [[enter-&gt;warehouse mainroom]] the door
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="75" name="front desk" tags="" position="875,3550" size="100,100">moving up to the front desk you see more things on the desk, along with the papers and the (if:$fwomanlife is true)[snoring woman](else:)[lifeless corpse covered in blood], you see: 
 logs of people entering and exiting
@@ -714,15 +732,15 @@ wake up the woman
 (if:$fwomanlife is true)[
 (if:$Wtype is &quot;melee&quot;)[(text-colour:yellow)[[[stab-&gt;front stab front woman]]] the woman with your (print:$weapon)](if:$Wtype is &quot;ranged&quot;)[(text-colour:yellow)[[[shoot-&gt;front shoot front woman]]] the woman with your (print:$weapon)]
 (if: $inventory contains &quot;poison&quot;)[(text-colour:yellow)[(link:&quot;poison&quot;)[(set:$FWposion to true)] the woman&#39;s food]]]
-look at [[inventory]]</tw-passagedata><tw-passagedata pid="76" name="front stab front woman" tags="" position="1025,3700" size="100,100">(if:$weapon is &quot;short sword&quot;)[moving around to behind the woman, you take your short sword and maneuver the tip of the blade to the left side of her back, taking a breath to steady yourself, you pludge the blade into her heart, sinking the blade between the ribcage.
-hearing a sharp intake of air you pull the blade out from her back, blood pooling around her feet.](if:$weapon is &quot;spear&quot;)[moving to be directly across desk from the woman, you maveuver the tip of the spear to the nook of her neck and shoulder. taking a breath to steady your self, you pludge the spear into her chest cavity stabbing the heart, the woman looks up you with pure terror in her eyes as a sharp exhale of air escapes her.
+look at [[inventory]]</tw-passagedata><tw-passagedata pid="76" name="front stab front woman" tags="" position="1025,3700" size="100,100">(if:$weapon is &quot;short sword&quot;)[moving around to behind the woman, you take your short sword and maneuver the tip of the blade to the left side of her back, taking a breath to steady yourself, you plunge the blade into her heart, sinking the blade between the ribcage.
+hearing a sharp intake of air you pull the blade out from her back, blood pooling around her feet.](if:$weapon is &quot;spear&quot;)[moving to be directly across desk from the woman, you maveuver the tip of the spear to the nook of her neck and shoulder. taking a breath to steady your self, you plunge the spear into her chest cavity stabbing the heart, the woman looks up you with pure terror in her eyes as a sharp exhale of air escapes her.
 pulling the spear out from her body, it falls limp on the desk, blood pooling around it](if:$weapon is &quot;dagger&quot;)[moving to be behind the woman, you lean forward and slide the blade across the desk under her neck. taking a breath to steady your self. You grab her hair at its roots with you off hand as you rip the blade across her neck.
 with a soft gurgle of blood from her neck she falls limp as you let go of her head, blood pools around her corpse]
 (set:$fwomanlife to false)
 [[move away-&gt;front sneak]] from the desk back into the room</tw-passagedata><tw-passagedata pid="77" name="front shoot front woman" tags="" position="1025,3550" size="100,100">standing across the desk from the sleeping woman, you notch an arrow and draw you bow, pointing the bow at the woman, you kick the desk.
 She sits up startled and looks at you as you release the arrow
 The arrow sinks into her chest directly into the heart
-the Woman lets out a sharp exhale of air as she collapes back onto the desk.
+the Woman lets out a sharp exhale of air as she collapses back onto the desk.
 moving to the woman you rip out the arrow as to not leave a trace.
 blood pools all around the desk and woman
 (set:$fwomanlife to false)
@@ -746,12 +764,12 @@ wake up the woman
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="80" name="front stab front woman normal" tags="" position="200,3600" size="100,100">standing across the desk from the sleeping woman, you notch an arrow and draw you bow, pointing the bow at the woman, you kick the desk.
 She sits up startled and looks at you as you release the arrow
 The arrow sinks into her chest directly into the heart
-the Woman lets out a sharp exhale of air as she collapes back onto the desk.
+the Woman lets out a sharp exhale of air as she collapses back onto the desk.
 moving to the woman you rip out the arrow as to not leave a trace.
 blood pools all around the desk and woman
 (set:$fwomanlife to false)
-[[move away-&gt;front normal]] from the desk back into the room</tw-passagedata><tw-passagedata pid="81" name="front shoot front woman normal" tags="" position="400,3600" size="100,100">(if:$weapon is &quot;short sword&quot;)[moving around to behind the woman, you take your short sword and maneuver the tip of the blade to the left side of her back, taking a breath to steady yourself, you pludge the blade into her heart, sinking the blade between the ribcage.
-hearing a sharp intake of air you pull the blade out from her back, blood pooling around her feet.](if:$weapon is &quot;spear&quot;)[moving to be directly across desk from the woman, you maveuver the tip of the spear to the nook of her neck and shoulder. taking a breath to steady your self, you pludge the spear into her chest cavity stabbing the heart, the woman looks up you with pure terror in her eyes as a sharp exhale of air escapes her.
+[[move away-&gt;front normal]] from the desk back into the room</tw-passagedata><tw-passagedata pid="81" name="front shoot front woman normal" tags="" position="400,3600" size="100,100">(if:$weapon is &quot;short sword&quot;)[moving around to behind the woman, you take your short sword and maneuver the tip of the blade to the left side of her back, taking a breath to steady yourself, you plunge the blade into her heart, sinking the blade between the ribcage.
+hearing a sharp intake of air you pull the blade out from her back, blood pooling around her feet.](if:$weapon is &quot;spear&quot;)[moving to be directly across desk from the woman, you maveuver the tip of the spear to the nook of her neck and shoulder. taking a breath to steady your self, you plunge the spear into her chest cavity stabbing the heart, the woman looks up you with pure terror in her eyes as a sharp exhale of air escapes her.
 pulling the spear out from her body, it falls limp on the desk, blood pooling around it](if:$weapon is &quot;dagger&quot;)[moving to be behind the woman, you lean forward and slide the blade across the desk under her neck. taking a breath to steady your self. You grab her hair at its roots with you off hand as you rip the blade across her neck.
 with a soft gurgle of blood from her neck she falls limp as you let go of her head, blood pools around her corpse]
 (set:$fwomanlife to false)
@@ -770,20 +788,20 @@ In the center of the western wall you see (if:$front is true)[[[the door-&gt;fro
 Looking up you see that the second floor is more of a walkway around the main room with a large is room that lines up with the balcony
 
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="83" name="front stab front woman burst" tags="" position="1225,3525" size="100,100">(if:$weapon is &quot;short sword&quot;)[quickly drawing your blade, you slash upwards at a diagonal before the woman has a chance to react. The end of the blade tears through her throat spraying blood all over the desk. Unable to produce a sound she grasps at her throat as the life escapes her terrified eyes
-collapes with a small thud, she lands face first on the desk.](if:$weapon is &quot;spear&quot;)[Thrusting your spear forward you make up distance between the two of you. The tip of the spear plunges directly into her chest piercing the heart, pulling the spear back out of her body causes it to fall face first on to the desk, blood pooling all around her corpse](if:$weapon is &quot;dagger&quot;)[thinking fast as your weapon only has a short range, you throw you dagger at her. Spinning through the air the dagger lands blade first into her left eyesocket, sinking all the to the back of the skull.
+collapses with a small thud, she lands face first on the desk.](if:$weapon is &quot;spear&quot;)[Thrusting your spear forward you make up distance between the two of you. The tip of the spear plunges directly into her chest piercing the heart, pulling the spear back out of her body causes it to fall face first on to the desk, blood pooling all around her corpse](if:$weapon is &quot;dagger&quot;)[thinking fast as your weapon only has a short range, you throw you dagger at her. Spinning through the air the dagger lands blade first into her left eyesocket, sinking all the to the back of the skull.
 having died instantly, she collapses backwards on her chair.
-walking up to the desk, you reach over it and grab the handle of the dagger wrenching it free. As you pull the blade from her skull her body follows it until her corpse is leaning over desk. the blade releases its hold causeing her body to fall face first onto the desk]
+walking up to the desk, you reach over it and grab the handle of the dagger wrenching it free. As you pull the blade from her skull her body follows it until her corpse is leaning over desk. the blade releases its hold causing her body to fall face first onto the desk]
 (set:$fwomanlife to false)
-move up to the [[next door-&gt;front warehouse door inside front]]</tw-passagedata><tw-passagedata pid="84" name="front shoot front woman burst" tags="" position="1375,3525" size="100,100">As the woman looks at you with supprise and slight shock you pull your bow and draw an arrow to fire at her. loosing the arrow from your bow, she breaths in to let out a shreak for help however the arrow sinks into her chest directly into the heart
-the Woman lets out a sharp exhale of air as she collapes back onto the desk.
+move up to the [[next door-&gt;front warehouse door inside front]]</tw-passagedata><tw-passagedata pid="84" name="front shoot front woman burst" tags="" position="1375,3525" size="100,100">As the woman looks at you with supprise and slight shock you pull your bow and draw an arrow to fire at her. loosing the arrow from your bow, she breaths in to let out a shriek for help however the arrow sinks into her chest directly into the heart
+the Woman lets out a sharp exhale of air as she collapses back onto the desk.
 moving to the woman you rip out the arrow as to not leave a trace.
 blood pools all around the desk and woman
 (set:$fwomanlife to false)
 move up to the [[next door-&gt;front warehouse door inside front]]</tw-passagedata><tw-passagedata pid="85" name="front woman inspector" tags="" position="1525,3525" size="100,100">Striding up to the woman at the desk you say
 
-(text-colour:green)[&quot;offical business with Gaulville, I will be taking an unguided tour of this building for inspections. any complaints can be filed within the townhall, we will get back to you within 3 to 5 business days&quot;]
+(text-colour:green)[&quot;official business with Gaulville, I will be taking an unguided tour of this building for inspections. any complaints can be filed within the townhall, we will get back to you within 3 to 5 business days&quot;]
 
-The woman too flabergasted to respond will just nod.
+The woman too flabbergasted to respond will just nod.
 looking at the desk you see a crudely drawn map of the building, snatching it and a set of keys from the desk, you use this as a chance to get to the ledger, you stroll over to door that leads into the next room
 (set:$map to true)(set:$key to true)
 [[walk-&gt;main room inspector front]] through the door
@@ -796,7 +814,7 @@ looking at the desk you see a crudely drawn map of the building, snatching it an
 (text-colour:green)[&quot;No, I guess I&#39;ll leave a note saying how rude you were&quot;]
 
 calmly walking to the next door you:
-[[walk through-&gt;warehouse mainroom]] the next door</tw-passagedata><tw-passagedata pid="87" name="main room inspector front" tags="" position="571,3911" size="100,100">opening the door and walking through you can see a group of workers milling about, moving stuff around and orgnizing boxes. 
+[[walk through-&gt;warehouse mainroom]] the next door</tw-passagedata><tw-passagedata pid="87" name="main room inspector front" tags="" position="571,3911" size="100,100">opening the door and walking through you can see a group of workers milling about, moving stuff around and organizing boxes. 
 as you now know the lay out of the building and that no one suspects anything is off about you, you can get to work unhindered
 
 Go up the stairs to the [[next floor-&gt;floor two inspector front]]
@@ -824,9 +842,9 @@ what do you do:
 [[walk away from desk-&gt;main office]] </tw-passagedata><tw-passagedata pid="92" name="safe" tags="" position="3000,5375" size="100,100">you walk over to the safe, its about 3ft by 3ft in size.
 testing the handle, its locked
 (if:$inventory contains &quot;lockpicks&quot;)[(text-colour:yellow)[[crack the safe]]]
-[[walk away from safe-&gt;main office]] </tw-passagedata><tw-passagedata pid="93" name="gain ledger" tags="" position="2908,6188" size="100,100">taking (if:$ledger is false)[the stolen ledger](else:)[your copyed ledger] you place it into your bag, and make your way back out of the building and to the tavern once more.
+[[walk away from safe-&gt;main office]] </tw-passagedata><tw-passagedata pid="93" name="gain ledger" tags="" position="2908,6188" size="100,100">taking (if:$ledger is false)[the stolen ledger](else:)[your copied ledger] you place it into your bag, and make your way back out of the building and to the tavern once more.
 
-[[enter tavern-&gt;end of game]] again</tw-passagedata><tw-passagedata pid="94" name="crack the safe" tags="" position="3200,5375" size="100,100">useing the tools that you bought, you spend some time and crack the safes lock.
+[[enter tavern-&gt;end of game]] again</tw-passagedata><tw-passagedata pid="94" name="crack the safe" tags="" position="3200,5375" size="100,100">using the tools that you bought, you spend some time and crack the safes lock.
 
 looking inside you find:
 roughly 2000 gold coins
@@ -840,7 +858,8 @@ do you take the contents:
 [[walk away from safe-&gt;main office]] </tw-passagedata><tw-passagedata pid="96" name="end of game" tags="" position="2918,6679" size="100,100">Congrats, this is the end currently
 the game is still under development, so more options will be presented at a future date
 (set:$good to 0)(set:$evil to 0)(set:$law to 0)(set:$chaos to 0)
-(if:$ledger is true)[(set:$good to $good +2)](if:$safec is true)[(set:$good to $good +1)](if:$front is true)[(set:$good to $good +3)](if:$back is true)[(set:$good to $good +3)](if:$balcony is true)[(set:$good to $good +3)](if:$surrender is true)[(set:$good to $good +3)](if:$sneakFront is true)[(set:$good to $good +1)](set:$good to $good +(count:$inventory,$inventory)/2)(if:$armor is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$weapon is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$fwomanlife is false)[(set:$evil to $evil +3)](if:$FWposion is true)[(set:$evil to $evil +3)](if:$ledger is false)[(set:$evil to $evil +1)](if:$sleepworker is false)[(set:$evil to $evil +3)](if:$backguard is false)[(set:$evil to $evil +3)](if:$fightleather is true)[(set:$evil to $evil +7)](if:$fightchainmail is true)[(set:$evil to $evil +7)](if:$fightother is true)[(set:$evil to $evil +7)](if:$map is true)[(set:$law to $law +1)](set:$law to $law +(count:$inventory,$inventory)/4)(if:$armor is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$weapon is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$potion is &quot;invisiblity&quot;)[(set:$law to $law +5)](if:$fwomanlife is false)[(set:$chaos to $chaos +(set:$chaos to $chaos +1)](if:$FWposion is true)[(set:$chaos to $chaos +1)](if:$confin is true)[(set:$chaos to $chaos +4)](if:$sleepworker is false)[(set:$chaos to $chaos +1)](if:$backguard is false)[(set:$chaos to $chaos +1)](if:$fightleather is true)[(set:$chaos to $chaos +3)](if:$fightchainmail is true)[(set:$chaos to $chaos +3)](if:$fightother is true)[(set:$chaos to $chaos +3)](if:$powder is true)[(set:$chaos to $chaos +5)](set:$chaos to $chaos +$feeling)
+(if:$ledger is true)[(set:$good to $good +2)](if:$safec is true)[(set:$good to $good +1)](if:$front is true)[(set:$good to $good +3)](if:$back is true)[(set:$good to $good +3)](if:$balcony is true)[(set:$good to $good +3)](if:$surrender is true)[(set:$good to $good +3)](if:$sneakFront is true)[(set:$good to $good +1)](set:$good to $good +(count:$inventory,$inventory)/2)(if:$armor is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$weapon is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$fwomanlife is false)[(set:$evil to $evil +3)](if:$FWposion is true)[(set:$evil to $evil +3)](if:$ledger is false)[(set:$evil to $evil +1)](if:$sleepworker is false)[(set:$evil to $evil +3)](if:$backguard is false)[(set:$evil to $evil +3)](if:$fightleather is true)[(set:$evil to $evil +7)](if:$fightchainmail is true)[(set:$evil to $evil +7)](if:$fightother is true)[(set:$evil to $evil +7)](if:$map is true)[(set:$law to $law +1)](set:$law to $law +(count:$inventory,$inventory)/4)(if:$armor is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$weapon is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$potion is &quot;invisibility
+&quot;)[(set:$law to $law +5)](if:$fwomanlife is false)[(set:$chaos to $chaos +(set:$chaos to $chaos +1)](if:$FWposion is true)[(set:$chaos to $chaos +1)](if:$confin is true)[(set:$chaos to $chaos +4)](if:$sleepworker is false)[(set:$chaos to $chaos +1)](if:$backguard is false)[(set:$chaos to $chaos +1)](if:$fightleather is true)[(set:$chaos to $chaos +3)](if:$fightchainmail is true)[(set:$chaos to $chaos +3)](if:$fightother is true)[(set:$chaos to $chaos +3)](if:$powder is true)[(set:$chaos to $chaos +5)](set:$chaos to $chaos +$feeling)
 Copy the line below and paste it in the field below
 $genre,$good,$evil,$law,$chaos
 
@@ -861,7 +880,7 @@ another [[door further along-&gt;kitchen]]
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="99" name="stab sleeping worker" tags="" position="2578,4660" size="100,100">moving up to the sleeping worker, (if:$weapon is &quot;short sword&quot; or &quot;dagger&quot;)[you draw your blade with your right hand, getting within arms reach of the worker you reach out and clamp your left hand on his mouth as you slit his throat with the blade in your right](if:$weapon is &quot;spear&quot;)[you aim your spear towards the mans heart and plunge it into the mans chest], pulling your weapon away from the mans body, you make eye contact as the mans last exprience is one of pure terror before his breath leaves him for the last time.
 (set:$sleepworker to false)
 [(link-goto: &quot;Return&quot;, (history:)&#39;s last) to the room]</tw-passagedata><tw-passagedata pid="100" name="shoot sleeping worker" tags="" position="2578,4510" size="100,100">drawing your bow, you take aim at his head and let loose your arrow.
-your arrow flies towards the mans face, impaling through his left eye the arrow pins his face to the wall. walking over you rip the arrow out from his twitching body as to not leave anymore evidence than nessesary.
+your arrow flies towards the mans face, impaling through his left eye the arrow pins his face to the wall. walking over you rip the arrow out from his twitching body as to not leave anymore evidence than necessary.
 (set:$sleepworker to false)
 [(link-goto: &quot;Return&quot;, (history:)&#39;s last) to the room]</tw-passagedata><tw-passagedata pid="101" name="barracks" tags="" position="2178,4205" size="100,100">Making your way along the walls you arrive to the door at the northern end of the eastern wall.
 slipping into the room unnoticed by the workers in the main warehouse room,
@@ -869,8 +888,9 @@ slipping into the room unnoticed by the workers in the main warehouse room,
 You find yourself in the barracks for the guards and workers.
 
 there are bunks all around the room with about half of the beds containing sleeping people.
-(if:$potion is not &quot;invisiblity&quot;)[
-Suddenly you hear a yell as a armed guard makes his way toward you with his weapon drawn, waking people as you moves toward you.
+(if:$potion is not &quot;invisibility
+&quot;)[
+Suddenly you hear a yell as an armed guard makes his way toward you with his weapon drawn, waking people up as he moves toward you.
 
 (text-colour:red)[&quot;What are you doing here?&quot;]
 
@@ -888,7 +908,7 @@ looking around, you seem to have entered a secondary storage room filled with ba
 Return to the main room of the first floor of the [[warehouse-&gt;warehouse mainroom]]
 
 investigate the [[barrels-&gt;barrels]]
-</tw-passagedata><tw-passagedata pid="103" name="barrels" tags="" position="2753,4360" size="100,100">moving around the room to look at the barrels and what contents they might hold, you find that they mostly contain a varity of food and liquids.
+</tw-passagedata><tw-passagedata pid="103" name="barrels" tags="" position="2753,4360" size="100,100">moving around the room to look at the barrels and what contents they might hold, you find that they mostly contain a variety of food and liquids.
 However you find that a few of the barrels seem to contain different powders and sand. Suspiciously all of the powder barrels seem to have warnings saying not to let them near fire.
 lying behind the barrels wedged between some barrels and the wall you find some papers.
 
@@ -900,13 +920,13 @@ among the papers you find a bunch of orders for the contents of the barrels and 
 [[fight to the death with your fists-&gt;fight fist]]
 ]]
 (if:$Wtype is &quot;melee&quot;)[(if:$armour is &quot;leather armor&quot;)[(if:$weapon is &quot;short sword&quot;)[[[draw your short sword to fight-&gt;fight sword leather]]](if:$weapon is &quot;spear&quot;)[[[pull out your spear to fight-&gt;fight spear leather]]](if:$weapon is &quot;dagger&quot;)[[[draw your dagger to fight-&gt;fight dagger leather]]]](if:$armor is &quot;chainmail armor&quot;)[(if:$weapon is &quot;short sword&quot;)[[[draw your short sword to fight-&gt;fight sword chainmail]]](if:$weapon is &quot;spear&quot;)[[[pull out your spear to fight-&gt;fight spear chainmail]]](if:$weapon is &quot;dagger&quot;)[[[draw your dagger to fight-&gt;fight dagger chainmail]]]](else:)[(if:$weapon is &quot;short sword&quot;)[[[draw your short sword to fight-&gt;fight sword other]]](if:$weapon is &quot;spear&quot;)[[[pull out your spear to fight-&gt;fight spear other]]](if:$weapon is &quot;dagger&quot;)[[[draw your dagger to fight-&gt;fight dagger other]]]]]
-(if:$Wtype is &quot;ranged&quot;)[(if:$armour is &quot;leather armor&quot;)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow leather]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow leather]]]](if:$armor is &quot;chainmail armor&quot;)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow chainmail]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow chainmail]]]](else:)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow other]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow other]]]]]</tw-passagedata><tw-passagedata pid="105" name="run barracks" tags="" position="1302.6666666666667,4580" size="100,100">not implemented yet
+(if:$Wtype is &quot;ranged&quot;)[(if:$armour is &quot;leather armor&quot;)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow leather]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow leather]]]](if:$armor is &quot;chainmail armor&quot;)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow chainmail]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow chainmail]]]](else:)[(if:$weapon is &quot;shortbow&quot;)[[[draw your shortbow-&gt;fight shortbow other]]](if:$weapon is &quot;longbow&quot;)[[[draw your longbow-&gt;fight longbow other]]]]]</tw-passagedata><tw-passagedata pid="105" name="run barracks" tags="" position="1302,4580" size="100,100">not implemented yet
 (link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="106" name="barracks reason" tags="" position="1576,4581" size="100,100">Trying to think quickly you realize that you might have bought some items that could help you get out of this alive
 
 (if:$armor is &quot;city inspector uniform&quot;)[(text-colour:yellow)[[[explain that-&gt;barracks inspector]] you are a city inspector]]
 (if:$inventory contains &quot;a brick named Steve&quot;)[take out [[Steve the brick-&gt;barracks steve]]]
 realize that you&#39;re an idiot and didnt bring anything useful [[try to fight-&gt;fight barracks]]
-</tw-passagedata><tw-passagedata pid="107" name="kitchen" tags="" position="3100,4595" size="100,100">making your way over to the room past the main office, you see a set of doors with chatter and sounds of metal clnking beyond the doors.
+</tw-passagedata><tw-passagedata pid="107" name="kitchen" tags="" position="3100,4595" size="100,100">making your way over to the room past the main office, you see a set of doors with chatter and sounds of metal clanking beyond the doors.
 
 move back to the [[hallway-&gt;floor two]] 
 move up to the [[door to peek inside.-&gt;kitchen peek]]
@@ -915,7 +935,7 @@ move up to the [[door to peek inside.-&gt;kitchen peek]]
 
 (text-colour:red)[&quot;I&#39;m must apologize, I couldnt quite see what you were wearing, please continue with your inspection&quot;]
 
-simply nodding you move around the barracks inspecting things to keep up the appeance of what you are wearing, before leaving the room
+simply nodding you move around the barracks inspecting things to keep up the appearance of what you are wearing, before leaving the room
 
 [[return to the main warehouse room-&gt;warehouse mainroom]]</tw-passagedata><tw-passagedata pid="109" name="barracks steve" tags="" position="1701,4730" size="100,100">Thinking back to what owner of the general store told you about Steve the brick, you figure you might as well try something.
 taking out Steve the brick, you say
@@ -934,7 +954,7 @@ go back to [[town-&gt;Gaulville]]
 current money is (print:$Money)</tw-passagedata><tw-passagedata pid="111" name="powders on fire" tags="" position="476,4580" size="100,100">You take out the flint and steel that you bought from the general store, you see a barrel full of a powder of a dark brown and red coloration.
 moving towards that barrel you strike the flint and steel causing a shower of sparks to land on the powder.
 
-The powder erupts into a pillar of flame violently spewwing sparks and embers all around the room.
+The powder erupts into a pillar of flame violently spewing sparks and embers all around the room.
 
 rapidly backing up you can see the flame quickly spreading from barrel to barrel further making the flames bigger and hotter.
 (set:$powder to true)
@@ -951,21 +971,22 @@ You can tell that these doors lead to the main room of the warehouse.
 [[peek through the cracks-&gt;back door outside peek]] to see inside.
 try to enter through the [[doors quietly-&gt;warehouse mainroom]].
 look at [[inventory]]
-</tw-passagedata><tw-passagedata pid="114" name="back stab guard" tags="" position="2126,3555" size="100,100">moving up to the guard (if:$weapon is &quot;short sword&quot; or &quot;dagger&quot;)[you draw your blade and postion yourself on the opposite side as his spear. Leaning forward you move the hilt of your blade to his throat, taking a deep breath you simultaneously grab his head with your off-hand as you rip the blade across his throat, spewing blood on the ground infront of the guard. The guard looks up at you with pure fear in his eyes as his life leaves his body.](if:$weapon is &quot;spear&quot;)[you postion the tip of your spear at the crook of his neck, taking a deep breath to steady yourself you pludge the shaft of the spear with all of your might into his chest cavity from above. his only response to your action is to look into your eyes as his life leaves him. pulling your spear out from his corpse makes a sicking squelch as it is removed.]
+</tw-passagedata><tw-passagedata pid="114" name="back stab guard" tags="" position="2126,3555" size="100,100">moving up to the guard (if:$weapon is &quot;short sword&quot; or &quot;dagger&quot;)[you draw your blade and position yourself on the opposite side as his spear. Leaning forward you move the hilt of your blade to his throat, taking a deep breath you simultaneously grab his head with your off-hand as you rip the blade across his throat, spewing blood on the ground in front
+ of the guard. The guard looks up at you with pure fear in his eyes as his life leaves his body.](if:$weapon is &quot;spear&quot;)[you position the tip of your spear at the crook of his neck, taking a deep breath to steady yourself you plunge the shaft of the spear with all of your might into his chest cavity from above. his only response to your action is to look into your eyes as his life leaves him. pulling your spear out from his corpse makes a sicking squelch as it is removed.]
 
 his now lifeless corpse falls backwards onto his chair as blood pools around the legs of his chair.
 (set:$backguard to false)
 [[move away from the guards corpse-&gt;warehouse back door day]] </tw-passagedata><tw-passagedata pid="115" name="back shoot guard" tags="" position="2276,3551" size="100,100">Pulling out your bow, you notch an arrow and draw back the string. taking aim at the guards chest, you take a deep breath in and release the arrow as you begin to breath out.
-your arrow flys the short distance between you and the guard before impacting this chest. The arrow pierces through whatever armor he had under his uniform and sinks directly into his heart bursting out his back pinning his body to the chair.
+your arrow flies the short distance between you and the guard before impacting this chest. The arrow pierces through whatever armor he had under his uniform and sinks directly into his heart bursting out his back pinning his body to the chair.
 already drawing back a second arrow, he looks up at you with an expression of pure terror as you loose your second arrow right at his face. This arrow plunges into his left eye imbedding itself into the back of his skull.
 
 pulling out the two arrows you fired, his body falls back onto his chair.
 (set:$backguard to false)
 [[move away from the guards corpse-&gt;warehouse back door day]] </tw-passagedata><tw-passagedata pid="116" name="back door outside peek" tags="" position="2881,3620" size="100,100">Moving even closer to the door you try to peek through any cracks and holes in the door and doorframe.
 
-you find a spot where you can see through at about chest height on the right side of the door where the tar sealent has been gouged out.
+you find a spot where you can see through at about chest height on the right side of the door where the tar sealant has been gouged out.
 
-looking trough, you can see about a dozen or so workers moving about reorginizing crates and barrels. There is also some piles of crates close to the door that you could hide behind when you enter. The workers in the warehouse seem fairly involed with there work and might not see you slip in.
+looking trough, you can see about a dozen or so workers moving about reorganizing crates and barrels. There are also some piles of crates close to the door that you could hide behind when you enter. The workers in the warehouse seem fairly involved with their work and might not see you slip in.
 
 [[Go back-&gt;back door outside]] 
 
@@ -981,7 +1002,7 @@ as you reach the door in the back of the room, you hear the building start to mo
 bursting through the door and out into the city you feel a rumble underneath you as a flash of light overtakes your body and a concussive blast throws you through the air, before your consciousness leaves your body.
 
 [[continue reading-&gt;powder run two]]</tw-passagedata><tw-passagedata pid="121" name="powder run two" tags="" position="476,4880" size="100,100">Slowly waking up in a daze, you look around to see the spot where the building was is now leveled to the ground with buildings around it roofs catching on fire.
-Shaking the dizzyness from your body, you stand up and try to think what you should do now.
+Shaking the dizziness from your body, you stand up and try to think about what you should do now.
 
 [[run from town]]
 [[go back to your contact in the tavern as a failure-&gt;tavern fail powder]]</tw-passagedata><tw-passagedata pid="122" name="run from town" tags="" position="401,5030" size="100,100">Cutting your losses, you take to the road to try to escape from your failure of a mission. leaving this town forever, you stake it out as traveling worker whos previous employer thinks is dead
@@ -993,7 +1014,7 @@ Shaking the dizzyness from your body, you stand up and try to think what you sho
 the warehouse guards capture you and send you off to the town guards where you now await trial in your jail cell.
 (set:$surrender to true)
 [[end of game]]</tw-passagedata><tw-passagedata pid="125" name="fight fist" tags="" position="1720,5461" size="100,100">deciding that you will fight to the end with only your fists, you know that you wont be able to win this fight, but you can at least take as many people down with you as you can.
-pummelling your way through the occupants of the warehouse, you begin to take damage and injuries to your body untill you can fight no more, succumbing to your wounds.
+pummelling your way through the occupants of the warehouse, you begin to take damage and injuries to your body until you can fight no more, succumbing to your wounds.
 
 [[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="126" name="fight sword leather" tags="" position="333,5460" size="100,100">you try to fight your way through and out of the barracks.
 even with how skilled you are with a blade, with only leather armor on you take several hits that bite into your flesh, leaving you heavily injured but the last man standing
@@ -1005,33 +1026,33 @@ even with how skilled you are with a spear, with only leather armor on you take 
 even with how skilled you are with a blade, with only leather armor on you take several hits that bite into your flesh, leaving you heavily injured but the last man standing
 
 [[leave the barracks into the now empty warehouse-&gt;after fight leather]]</tw-passagedata><tw-passagedata pid="129" name="fight sword chainmail" tags="" position="811,5471" size="100,100">you try to fight your way through and out of the barracks.
-with the chainmail armor that you have put on, you can skillfuly fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
+with the chainmail armor that you have put on, you can skillfully fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
 
 [[leave the barracks into the now empty warehouse-&gt;after fight chainmail]]</tw-passagedata><tw-passagedata pid="130" name="fight spear chainmail" tags="" position="929,5478" size="100,100">you try to fight your way through and out of the barracks.
-with the chainmail armor that you have put on, you can skillfuly fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
+with the chainmail armor that you have put on, you can skillfully fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
 
 [[leave the barracks into the now empty warehouse-&gt;after fight chainmail]]</tw-passagedata><tw-passagedata pid="131" name="fight dagger chainmail" tags="" position="1045,5488" size="100,100">you try to fight your way through and out of the barracks.
-with the chainmail armor that you have put on, you can skillfuly fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
+with the chainmail armor that you have put on, you can skillfully fight your way through the occupants of the warehouse, taking minimal hits that go past your chainmail armor
 
 [[leave the barracks into the now empty warehouse-&gt;after fight chainmail]]</tw-passagedata><tw-passagedata pid="132" name="fight sword other" tags="" position="1258,5491" size="100,100">You try to fight your way through and out of the barracks.
-However as your only form of armor on your body is just standered clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
+However as your only form of armor on your body is just standard clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
 
 [[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="133" name="fight spear other" tags="" position="1365,5491" size="100,100">You try to fight your way through and out of the barracks.
-However as your only form of armor on your body is just standered clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
+However as your only form of armor on your body is just standard clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
 
 [[the void overtakes you-&gt;after fight other]]
 </tw-passagedata><tw-passagedata pid="134" name="fight dagger other" tags="" position="1468,5493" size="100,100">You try to fight your way through and out of the barracks.
-However as your only form of armor on your body is just standered clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
+However as your only form of armor on your body is just standard clothes, this is a fight that you cant win. for as skilled as you are with your weapon, there are too many people fighting you to be taken out. you manage to kill most of the people in the warehouse before succumbing to your wounds.
 
 [[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="135" name="fight shortbow leather" tags="" position="386,6095" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, but not before taking heavy damage through your leather armor.
 
 [[move around the now empty warehouse-&gt;after fight leather]]</tw-passagedata><tw-passagedata pid="136" name="fight longbow leather" tags="" position="495,6095" size="100,100">drawing your longbow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, but not before taking heavy damage through your leather armor.
 
-[[move around the now empty warehouse-&gt;after fight leather]]</tw-passagedata><tw-passagedata pid="137" name="fight shortbow chainmail" tags="" position="968,6090" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, luckly with the chainmail armor that you are wearing, you make it out with just minor injuries to your body
+[[move around the now empty warehouse-&gt;after fight leather]]</tw-passagedata><tw-passagedata pid="137" name="fight shortbow chainmail" tags="" position="968,6090" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, luckily with the chainmail armor that you are wearing, you make it out with just minor injuries to your body
 
-[[move around the now empty warehouse-&gt;after fight chainmail]]</tw-passagedata><tw-passagedata pid="138" name="fight longbow chainmail" tags="" position="1086,6101" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, luckly with the chainmail armor that you are wearing, you make it out with just minor injuries to your body</tw-passagedata><tw-passagedata pid="139" name="fight shortbow other" tags="" position="1578,6135" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you try to take out everyone in the warehouse. However as you are effectivily not wear any real armor the damage and injuries build up to a point where you cant make it through this fight. you manage to kill most of those in the warehouse before succumbing to your wounds.
+[[move around the now empty warehouse-&gt;after fight chainmail]]</tw-passagedata><tw-passagedata pid="138" name="fight longbow chainmail" tags="" position="1086,6101" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you manage to kill everyone in the warehouse, luckily with the chainmail armor that you are wearing, you make it out with just minor injuries to your body</tw-passagedata><tw-passagedata pid="139" name="fight shortbow other" tags="" position="1578,6135" size="100,100">drawing your short bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you try to take out everyone in the warehouse. However as you are effectively not wearing any real armor the damage and injuries build up to a point where you cant make it through this fight. you manage to kill most of those in the warehouse before succumbing to your wounds.
 
-[[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="140" name="fight longbow other" tags="" position="1700,6138" size="100,100">drawing your long bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you try to take out everyone in the warehouse. However as you are effectivily not wear any real armor the damage and injuries build up to a point where you cant make it through this fight. you manage to kill most of those in the warehouse before succumbing to your wounds.
+[[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="140" name="fight longbow other" tags="" position="1700,6138" size="100,100">drawing your long bow, you run around the warehouse taking shots at those who are trying to attack you, using the crates to your advantage you try to take out everyone in the warehouse. However as you are effectively not wearing any real armor the damage and injuries build up to a point where you cant make it through this fight. you manage to kill most of those in the warehouse before succumbing to your wounds.
 
 [[the void overtakes you-&gt;after fight other]]</tw-passagedata><tw-passagedata pid="141" name="after fight leather" tags="" position="603,6583" size="100,100">with the now empty warehouse, you can spend your time limping around the building trying to find the ledger that you were sent to find.
 after some time you finally find it in the main office upstairs
@@ -1043,12 +1064,12 @@ after some time you finally find it in the main office upstairs
 [[steal-&gt;gain ledger fight]] the ledger
 (if:$inventory contains &quot;paper, ink, quill&quot;)[(text-colour:yellow)[[[copy-&gt;gain ledger fight]] the ledger](set:$ledger to true)]</tw-passagedata><tw-passagedata pid="143" name="after fight other" tags="" position="1676,6560" size="100,100">as your vision fades into black, and all feeling leaves your body, you feel your consciousness floating in an inky void.
 what makes you, you starts to unravel from your consciousness into the void until all that was you is now gone
-[[end of game]](set:$fightother to true)</tw-passagedata><tw-passagedata pid="144" name="gain ledger fight" tags="" position="2708,6290" size="100,100">taking (if:$ledger is false)[the stolen ledger](else:)[your copyed ledger] you place it into your bag, and make your way back out of the building and to the tavern once more.
+[[end of game]](set:$fightother to true)</tw-passagedata><tw-passagedata pid="144" name="gain ledger fight" tags="" position="2708,6290" size="100,100">taking (if:$ledger is false)[the stolen ledger](else:)[your copied ledger] you place it into your bag, and make your way back out of the building and to the tavern once more.
 
-[[enter tavern-&gt;end of game]] again</tw-passagedata><tw-passagedata pid="145" name="grappling hook balcony" tags="" position="3493,3233" size="100,100">tieing the rope to the grappling hook, you throw up the grappling hook on to the balcony. Once the grappling hook gets a hold, you climb up it into the balcony.
+[[enter tavern-&gt;end of game]] again</tw-passagedata><tw-passagedata pid="145" name="grappling hook balcony" tags="" position="3493,3233" size="100,100">tying the rope to the grappling hook, you throw up the grappling hook on to the balcony. Once the grappling hook gets a hold, you climb up it into the balcony.
 
 
-[[look around the balcony-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="146" name="brick climb balcony" tags="" position="3643,3233" size="100,100">tieing the rope around Steve, you throw it up onto the balcony, trying to get it loop around the guard rail and come back down.
+[[look around the balcony-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="146" name="brick climb balcony" tags="" position="3643,3233" size="100,100">tying the rope around Steve, you throw it up onto the balcony, trying to get it loop around the guard rail and come back down.
 after a few attempts at getting it to work, one attempt finally get you what you want.
 You climb up the rope make your way onto the balcony
 
@@ -1061,13 +1082,14 @@ You climb up the rope make your way onto the balcony
 [[step back from the window-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="149" name="outside balcony door" tags="" position="3679,3736" size="100,100">moving up to the door, you see that it is a normal wooden door with and handle and lock on it.
 testing the handle you find that it is locked,
 (if:$inventory contains &quot;lockpicks&quot;)[(text-colour:yellow)[[pick the doors locks-&gt;balcony door unlock]]]
-[[step back from the door-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="150" name="balcony door unlock" tags="" position="3679,3886" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="151" name="break the window" tags="" position="3404,3898" size="100,100">Hitting the window, you cause it to shatter</tw-passagedata><tw-passagedata pid="152" name="kitchen peek" tags="" position="3301.6666666666665,4696.666666666667" size="100,100">moving up to the set of doors you lean agianst the brack of the door to peer inside.
+[[step back from the door-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="150" name="balcony door unlock" tags="" position="3679,3886" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="151" name="break the window" tags="" position="3404,3898" size="100,100">Hitting the window, you cause it to shatter. broken glass falling to the ground.
+cringing at the loud noise that you made, you prepare to make a quick move if someone responds</tw-passagedata><tw-passagedata pid="152" name="kitchen peek" tags="" position="3301,4696" size="100,100">moving up to the set of doors you lean against the brack of the door to peer inside.
 
-looking inside you see a couple of people moving about cooking and preparing food for a suprising amount of people. their converstation is nothing of note, mostly just banter between the people.
+looking inside you see a couple of people moving about cooking and preparing food for a surprising amount of people. their conversation is nothing of note, mostly just banter between the people.
 
 [[enter the kitchen-&gt;kitchen inside]]
-[[walk back-&gt;floor two]]</tw-passagedata><tw-passagedata pid="153" name="kitchen inside" tags="" position="3301.6666666666665,4846.666666666667" size="100,100">walking inside the kitchen, one of chefs looks at you and you find that there is suddenly a pan flying towards your head.
-quickly ducking out of the way of the pan, you back out of the room as one of the chefs waves a large knife in you direction.
+[[walk back-&gt;floor two]]</tw-passagedata><tw-passagedata pid="153" name="kitchen inside" tags="" position="3301,4846" size="100,100">walking inside the kitchen, one of chefs looks at you and you find that there is suddenly a pan flying towards your head.
+quickly ducking out of the way of the pan, you back out of the room as one of the chefs waves a large knife in your direction.
 
 [[back out of the room-&gt;floor two]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
