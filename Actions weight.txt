@@ -1,0 +1,26 @@
+(fwomanlife) false = 3 evil & 1 chaos
+(FWposion) true = 3 evil & 1 chaos
+(map) true = 1 law
+(confin) true = 4 chaos
+(key)
+(ledger) true = 2 good : false = 1 evil
+(safec) true = 1 good
+(sleepworker) false = 3 evil & 1 chaos
+(front) true = 3 good
+(back) true = 3 good
+(balcony) true = 3 good
+(backguard) false = 3 evil & 1 chaos
+(fightleather) true = 7 evil & 3 chaos
+(fightchainmail) true = 7 evil & 3 chaos
+(fightother) true = 7 evil & 3 chaos
+(surrender) true = 3 good
+(sneakFront) true = 1 good
+(powder) true = 5 chaos
+(Money)
+(inventory)for each item add .5 good & .25 law
+(time)
+(armor) if not nothing = 1 good & 1 law
+(weapon) if not nothing = 1 good & 1 law
+(feeling) add whatever the number is to chaos
+(potion) invisiblity = 5 law
+($Wtype)
