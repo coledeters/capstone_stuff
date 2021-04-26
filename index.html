@@ -162,7 +162,7 @@ go to your [[room-&gt;Gaulville tavern room]] for the night
 return to [[town-&gt;Gaulville]] 
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="10" name="Gaulville" tags="location" position="2000,1800" size="100,100">you walk around the city of gaulville, looking around you can find signs that lead you to various points of interest in the town.
 which would you like to approach
-
+(set:$fwomanlife to true)(set:$FWposion to false)(set:$map to false)(set:$confin to false)(set:$key to false)(set:$ledger to false)(set:$safec to false)(set:$sleepworker to true)(set: $front to false)(set:$back to false)(set:$balcony to false)(set:$backguard to true)(set:$fightleather to false)(set:$fightchainmail to false)(set:$fightother to false)(set:$surrender to false)(set:$sneakFront to false)(set:$powder to false)(set:$windowBreak to false)(set:$balconyDoorPicked to false)
 The [[blacksmith-&gt;Gaulville blacksmith]]
 
 the [[general Store-&gt;gaulville general store]]
@@ -194,7 +194,7 @@ weapon type:(print:$Wtype)
 (if: $inventory contains &quot;shortbow&quot;)[(text-colour:yellow)[(link: &quot;equip shortbow&quot;)[(set:$weapon to &quot;shortbow&quot;)(set:$Wtype to &quot;ranged&quot;)]]]
 (if: $inventory contains &quot;longbow&quot;)[(text-colour:yellow)[(link: &quot;equip longbow&quot;)[(set:$weapon to &quot;longbow&quot;)(set:$Wtype to &quot;ranged&quot;)]]]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="12" name="notes" tags="" position="3195,6706" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="barkeep first two" tags="dialog" position="1600,1048.3333333333333" size="100,100">The barkeep walks into the kitchen with you following him.
+(link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="12" name="notes" tags="" position="3195,6706" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="barkeep first two" tags="dialog" position="1600,1048" size="100,100">The barkeep walks into the kitchen with you following him.
 
 when the door closes behind you, he looks around, then turns towards you and says
 (text-colour:red)[&quot;My names Calum, and I&#39;m the one thats got the job yer lookin for.&quot;
@@ -331,11 +331,8 @@ look at [[inventory]]
 (text-colour:red)[&quot;My name is Volgan Stonebreaker, I make potions, let&#39;s see what you need&quot;]
 looking around you see some potions that could be useful to use
 
-(if:$inventory contains &quot;invisibility
- potion&quot;)[](else:)[(if:$Money&gt;=50)[
-A [[invisibility
- potion]]: 50 gold](else:)[A [[invisibility
- potion-&gt;No Money]]: 50 gold]]
+(if:$inventory contains &quot;invisibility potion&quot;)[](else:)[(if:$Money&gt;=50)[
+A [[invisibility potion]]: 50 gold](else:)[A [[invisibility potion-&gt;No Money]]: 50 gold]]
 (if:$inventory contains &quot;fire resistance potion&quot;)[](else:)[(if:$Money&gt;=20)[
 A [[fire resistance potion]]: 20 gold](else:)[A [[fire resistance potion-&gt;No Money]]: 20 gold]]
 (if:$inventory contains &quot;water breathing potion&quot;)[](else:)[(if:$Money&gt;=20)[
@@ -450,10 +447,11 @@ look at [[inventory]]
 
 the [[Front entrance-&gt;warehouse front entrance day]] on the western side: no guards outside here
 a [[Storage entrance-&gt;warehouse back entrance day]] in the back on the eastern side, with a sleeping guard next to the door
+a [[balcony-&gt;warehouse balcony day]] on the northern side of the building
 
 
-(set:$fwomanlife to true)(set:$FWposion to false)(set:$map to false)(set:$confin to false)(set:$key to false)(set:$ledger to false)(set:$safec to false)(set:$sleepworker to true)(set: $front to false)(set:$back to false)(set:$balcony to false)(set:$backguard to true)(set:$fightleather to false)(set:$fightchainmail to false)(set:$fightother to false)(set:$surrender to false)(set:$sneakFront to false)(set:$powder to false)
-</tw-passagedata><tw-passagedata pid="35" name="No Money" tags="" position="2000,1625" size="100,100">Looking into your coin purse, you find that you don&#39;t have enough money to for this
+
+(set:$fwomanlife to true)(set:$FWposion to false)(set:$map to false)(set:$confin to false)(set:$key to false)(set:$ledger to false)(set:$safec to false)(set:$sleepworker to true)(set: $front to false)(set:$back to false)(set:$balcony to false)(set:$backguard to true)(set:$fightleather to false)(set:$fightchainmail to false)(set:$fightother to false)(set:$surrender to false)(set:$sneakFront to false)(set:$powder to false)(set:$windowBreak to false)(set:$balconyDoorPicked to false)</tw-passagedata><tw-passagedata pid="35" name="No Money" tags="" position="2000,1625" size="100,100">Looking into your coin purse, you find that you don&#39;t have enough money to for this
 
 (link-goto: &quot;Return&quot;, (history:)&#39;s last)</tw-passagedata><tw-passagedata pid="36" name="leather armor" tags="dialog" position="825,2400" size="100,100">picking up the leather armor, you bring it to Broulic and hand him 15 coins for it.
 (set:$Money to $Money -15)
@@ -535,12 +533,9 @@ current money is (print:$Money)</tw-passagedata><tw-passagedata pid="46" name="l
 
 go back to [[town-&gt;Gaulville]] 
 
-current money is (print:$Money)</tw-passagedata><tw-passagedata pid="47" name="invisibility
- potion" tags="dialog" position="2575,2200" size="100,100">picking up the invisibility
- potion, you bring it to Volgan and hand him 50 coins for it.
+current money is (print:$Money)</tw-passagedata><tw-passagedata pid="47" name="invisibility potion" tags="dialog" position="2575,2200" size="100,100">picking up the invisibility potion, you bring it to Volgan and hand him 50 coins for it.
 (set:$Money to $Money -50)
-(set:$inventory to it +(a:&quot;invisibility
- potion&quot;))
+(set:$inventory to it +(a:&quot;invisibility potion&quot;))
 
 [[buy more things-&gt;Gaulville alchemist]] 
 
@@ -596,7 +591,7 @@ go back to [[town-&gt;Gaulville]]
 
 current money is (print:$Money)</tw-passagedata><tw-passagedata pid="54" name="wait for night" tags="" position="695,1405" size="100,100">laying down on the bed you decide to take a short nap to wait for night to begin. you wake up as the sun is setting and exit the tavern to continue your mission
 (set:$time to &quot;night&quot;)
-[[Go to Town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="55" name="warehouse front entrance day" tags="" position="800,3051.6666666666665" size="100,100">inspecting the front entrance, you can see through the window that there is a entrance room with just a secretary at a desk, who seems to be asleep.
+[[Go to Town-&gt;Gaulville]]</tw-passagedata><tw-passagedata pid="55" name="warehouse front entrance day" tags="" position="800,3051" size="100,100">inspecting the front entrance, you can see through the window that there is a entrance room with just a secretary at a desk, who seems to be asleep.
 once you enter the building there will be no turning back
 
 go back to [[walking around-&gt;warehouse]] 
@@ -664,11 +659,7 @@ look at [[inventory]]</tw-passagedata><tw-passagedata pid="63" name="warehouse b
 the large doors that lead inside.
 (set:$back to true)
 what do you do:
-(if: $inventory contains &quot;invisibility
- potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility
- potion&quot;)[(set:$potion to &quot;invisibility
-&quot;)(set:$inventory to it -(a:&quot;invisibility
- potion&quot;))]]]
+(if: $inventory contains &quot;invisibility potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility potion&quot;)[(set:$potion to &quot;invisibility&quot;)(set:$inventory to it -(a:&quot;invisibility potion&quot;))]]]
 (if:$backguard is true)[approach [[the guard-&gt;back guard]].]
 approach [[the door-&gt;back door outside]].
 
@@ -713,11 +704,7 @@ look at [[inventory]]</tw-passagedata><tw-passagedata pid="74" name="front wareh
 listening carefully to the door, you can hear some movement and voices on the other side. it would be much easier sneak past all the people if you were invisible
 what do you do:
 (if:$confin is false)[(link-goto: &quot;Return&quot;, (history:)&#39;s last) to the room]
-(if: $inventory contains &quot;invisibility
- potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility
- potion&quot;)[(set:$potion to &quot;invisibility
-&quot;)(set:$inventory to it -(a:&quot;invisibility
- potion&quot;))]]]
+(if: $inventory contains &quot;invisibility potion&quot;)[(text-colour:yellow)[(link: &quot;drink the invisibility potion&quot;)[(set:$potion to &quot;invisibility&quot;)(set:$inventory to it -(a:&quot;invisibility potion&quot;))]]]
 [[enter-&gt;warehouse mainroom]] the door
 look at [[inventory]]</tw-passagedata><tw-passagedata pid="75" name="front desk" tags="" position="875,3550" size="100,100">moving up to the front desk you see more things on the desk, along with the papers and the (if:$fwomanlife is true)[snoring woman](else:)[lifeless corpse covered in blood], you see: 
 logs of people entering and exiting
@@ -829,8 +816,7 @@ look at [[inventory]]</tw-passagedata><tw-passagedata pid="90" name="main office
 
 a door leading into the building that you just walked through,
 [[a door-&gt;main office balcony]] that leads to the balcony
-2 windows that flank the door
-1 window next to the balcony
+(if:$windowBreak is false)[2 windows that flank the balcony door](else:)[2 windows that flank the balcony door, one shattered with glass littering the floor]
 [[a desk-&gt;office desk]] with a books and papers on it
 [[2 bookcases-&gt;main office bookcases]]
 a(if:$safec is false)[[[ safe-&gt;safe]]](else:)[n open safe]
@@ -858,8 +844,7 @@ do you take the contents:
 [[walk away from safe-&gt;main office]] </tw-passagedata><tw-passagedata pid="96" name="end of game" tags="" position="2918,6679" size="100,100">Congrats, this is the end currently
 the game is still under development, so more options will be presented at a future date
 (set:$good to 0)(set:$evil to 0)(set:$law to 0)(set:$chaos to 0)
-(if:$ledger is true)[(set:$good to $good +2)](if:$safec is true)[(set:$good to $good +1)](if:$front is true)[(set:$good to $good +3)](if:$back is true)[(set:$good to $good +3)](if:$balcony is true)[(set:$good to $good +3)](if:$surrender is true)[(set:$good to $good +3)](if:$sneakFront is true)[(set:$good to $good +1)](set:$good to $good +(count:$inventory,$inventory)/2)(if:$armor is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$weapon is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$fwomanlife is false)[(set:$evil to $evil +3)](if:$FWposion is true)[(set:$evil to $evil +3)](if:$ledger is false)[(set:$evil to $evil +1)](if:$sleepworker is false)[(set:$evil to $evil +3)](if:$backguard is false)[(set:$evil to $evil +3)](if:$fightleather is true)[(set:$evil to $evil +7)](if:$fightchainmail is true)[(set:$evil to $evil +7)](if:$fightother is true)[(set:$evil to $evil +7)](if:$map is true)[(set:$law to $law +1)](set:$law to $law +(count:$inventory,$inventory)/4)(if:$armor is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$weapon is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$potion is &quot;invisibility
-&quot;)[(set:$law to $law +5)](if:$fwomanlife is false)[(set:$chaos to $chaos +(set:$chaos to $chaos +1)](if:$FWposion is true)[(set:$chaos to $chaos +1)](if:$confin is true)[(set:$chaos to $chaos +4)](if:$sleepworker is false)[(set:$chaos to $chaos +1)](if:$backguard is false)[(set:$chaos to $chaos +1)](if:$fightleather is true)[(set:$chaos to $chaos +3)](if:$fightchainmail is true)[(set:$chaos to $chaos +3)](if:$fightother is true)[(set:$chaos to $chaos +3)](if:$powder is true)[(set:$chaos to $chaos +5)](set:$chaos to $chaos +$feeling)
+(if:$ledger is true)[(set:$good to $good +2)](if:$safec is true)[(set:$good to $good +1)](if:$front is true)[(set:$good to $good +3)](if:$back is true)[(set:$good to $good +3)](if:$balcony is true)[(set:$good to $good +3)](if:$surrender is true)[(set:$good to $good +3)](if:$sneakFront is true)[(set:$good to $good +1)](set:$good to $good +(count:$inventory,$inventory)/2)(if:$armor is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$weapon is not &quot;nothing&quot;)[(set:$good to $good +1)](if:$fwomanlife is false)[(set:$evil to $evil +3)](if:$FWposion is true)[(set:$evil to $evil +3)](if:$ledger is false)[(set:$evil to $evil +1)](if:$sleepworker is false)[(set:$evil to $evil +3)](if:$backguard is false)[(set:$evil to $evil +3)](if:$fightleather is true)[(set:$evil to $evil +7)](if:$fightchainmail is true)[(set:$evil to $evil +7)](if:$fightother is true)[(set:$evil to $evil +7)](if:$map is true)[(set:$law to $law +1)](set:$law to $law +(count:$inventory,$inventory)/4)(if:$armor is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$weapon is not &quot;nothing&quot;)[(set:$law to $law +1)](if:$potion is &quot;invisibility&quot;)[(set:$law to $law +5)](if:$fwomanlife is false)[(set:$chaos to $chaos +(set:$chaos to $chaos +1)](if:$FWposion is true)[(set:$chaos to $chaos +1)](if:$confin is true)[(set:$chaos to $chaos +4)](if:$sleepworker is false)[(set:$chaos to $chaos +1)](if:$backguard is false)[(set:$chaos to $chaos +1)](if:$fightleather is true)[(set:$chaos to $chaos +3)](if:$fightchainmail is true)[(set:$chaos to $chaos +3)](if:$fightother is true)[(set:$chaos to $chaos +3)](if:$powder is true)[(set:$chaos to $chaos +5)](set:$chaos to $chaos +$feeling)(if:$windowBreak is true)[(set:$evil to $evil +1)](if:$balconyDoorPicked is true)[(set:$law to $law +2)]
 Copy the line below and paste it in the field below
 $genre,$good,$evil,$law,$chaos
 
@@ -888,8 +873,7 @@ slipping into the room unnoticed by the workers in the main warehouse room,
 You find yourself in the barracks for the guards and workers.
 
 there are bunks all around the room with about half of the beds containing sleeping people.
-(if:$potion is not &quot;invisibility
-&quot;)[
+(if:$potion is not &quot;invisibility&quot;)[
 Suddenly you hear a yell as an armed guard makes his way toward you with his weapon drawn, waking people up as he moves toward you.
 
 (text-colour:red)[&quot;What are you doing here?&quot;]
@@ -1074,6 +1058,7 @@ after a few attempts at getting it to work, one attempt finally get you what you
 You climb up the rope make your way onto the balcony
 
 [[look around the balcony-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="147" name="balcony entrance" tags="" position="3604,3586" size="100,100">looking around the balcony now that you are up there, you can see that There are a few chairs looking out from the building with small tables next to each of them. On the small tables there appear to be ash trays with half finished cigars in them.
+(set:$balcony to true)
 [[Two windows showing the main office.-&gt;outside balcony windows]]
 [[a door leading in-&gt;outside balcony door]]
 [[the rope that brought you up here-&gt;warehouse balcony ground day]]</tw-passagedata><tw-passagedata pid="148" name="outside balcony windows" tags="" position="3529,3736" size="100,100">stepping up to the windows, you can see through them into the main office. inside you can see the ledger that you are after on the desk.
@@ -1082,8 +1067,18 @@ You climb up the rope make your way onto the balcony
 [[step back from the window-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="149" name="outside balcony door" tags="" position="3679,3736" size="100,100">moving up to the door, you see that it is a normal wooden door with and handle and lock on it.
 testing the handle you find that it is locked,
 (if:$inventory contains &quot;lockpicks&quot;)[(text-colour:yellow)[[pick the doors locks-&gt;balcony door unlock]]]
-[[step back from the door-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="150" name="balcony door unlock" tags="" position="3679,3886" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="151" name="break the window" tags="" position="3404,3898" size="100,100">Hitting the window, you cause it to shatter. broken glass falling to the ground.
-cringing at the loud noise that you made, you prepare to make a quick move if someone responds</tw-passagedata><tw-passagedata pid="152" name="kitchen peek" tags="" position="3301,4696" size="100,100">moving up to the set of doors you lean against the brack of the door to peer inside.
+[[step back from the door-&gt;balcony entrance]]</tw-passagedata><tw-passagedata pid="150" name="balcony door unlock" tags="" position="3679,3886" size="100,100">walking up to the door, you pull out the lock picks that you bought. You take some time to pick open the lock of the door.
+
+after a short bit of time, you are rewarded with door opening as it is unlocked.
+(set:$balconyDoorPicked to true)
+
+[[walk through the door -&gt;main office]]
+</tw-passagedata><tw-passagedata pid="151" name="break the window" tags="" position="3404,3898" size="100,100">Hitting the window, you cause it to shatter. broken glass falling to the ground.
+cringing at the loud noise that you made, you prepare to make a quick move if someone responds.
+(set:$windowBreak to true)
+however, there doesnt seem to be any motion after the glass breaks
+
+[[walk through the broken window-&gt;main office]]</tw-passagedata><tw-passagedata pid="152" name="kitchen peek" tags="" position="3301,4696" size="100,100">moving up to the set of doors you lean against the brack of the door to peer inside.
 
 looking inside you see a couple of people moving about cooking and preparing food for a surprising amount of people. their conversation is nothing of note, mostly just banter between the people.
 
